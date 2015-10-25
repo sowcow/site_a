@@ -1,11 +1,33 @@
-header
-  padding: 2rem 0
+//#main-center
 
-  h1.brand
-    margin-bottom: 2rem
 
-    font-size: 300%
-    font-weight: 100
-    line-height: 1.5
+#main-band
+  //$band-bg: mix(navy, white, 30%)
+  //$center-bg: mix(navy, grey, 30%)
+  //$brand-color: white
 
-    font-family: "proxima-nova-soft", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif
+  $band-bg: mix(silver, white, 20%)
+  $center-bg: mix(silver, white, 20%)
+  $brand-color: black
+
+  background-color: $band-bg
+  //margin-bottom: 2rem
+  border-bottom: solid 1px silver
+
+  header
+    @include outer-container
+
+    padding: 2rem 0
+    background-color: $center-bg
+    color: $brand-color
+  
+    h1
+      margin: 0
+      margin-left: 4rem
+      //margin-bottom: 2rem
+  
+      font-size: 300%
+      font-weight: 100
+      line-height: 1.5
+  
+      font-family: "proxima-nova-soft", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif

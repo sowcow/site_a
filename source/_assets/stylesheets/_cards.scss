@@ -18,7 +18,9 @@
   $card-header-background: $card-background;
   $card-margin: 1em;
   $card-image-hover-opacity: 0.7;
-  $card-image-hover-color: #F8F2B4;
+  //$card-image-hover-color: #F8F2B4;
+  //$card-image-hover-color: mix(mix(green, lime), white, 60%);
+  $card-image-hover-color: yellow;
 
   @include flex-basis(15em);
   @include flex-grow(1);
@@ -37,6 +39,11 @@
     height: 150px;
     max-height: 150px;
     background-color: $card-image-hover-color;
+
+    // added by me
+    border-top-left-radius: $base-border-radius;
+    border-top-right-radius: $base-border-radius;
+    border: none;
 
     img {
       @include transition (all 0.2s ease-in-out);

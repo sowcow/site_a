@@ -2,10 +2,17 @@
 layout: default
 ---
 
-.container
+#main-band
   %header
-    %h1.brand
-      Заголовок
+    %h1
+      <img src=/img/logo.png />
+      УнтерФюрра
+
+#idea-band
+  %pre.content
+    Запчасти для дережаблей,
+    поездов и паровых машин
+    с доставкой.
 
 
 .comments
@@ -14,10 +21,12 @@ layout: default
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
     .comment-content
       %h1
-        First Comment Title or Author
+        Есть выбор
       %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.
-      %p.comment-detail
+        Поставки, склады...
+        Поставки, склады...
+        Поставки, склады...
+      -#%p.comment-detail
         Date or details about this post
   
   .comment
@@ -25,41 +34,67 @@ layout: default
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png" alt="Logo image">
     .comment-content
       %h1
-        Another One
+        Быстрая доставка
       %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.
-      %p.comment-detail
+        Лучший сервис, итд итп
+        Лучший сервис, итд итп
+      -#%p.comment-detail
         Date or details about this post
 
 .cards
   .card
     .card-image
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+      -#<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+      %img{ :src => "/img/bus.png" }
     .card-header
-      First Card
+      Для автобусов
     .card-copy
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
  
   .card
     .card-image
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+      %img{ :src => "/img/truck.png" }
+      -#<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
     .card-header
-      First Card
+      Для грузовиков
     .card-copy
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
 
   .card
     .card-image
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+      %img{ :src => "/img/semitrailer.png" }
+      -#<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
     .card-header
-      First Card
+      Для прицепов
     .card-copy
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
 
-.delete-me
-  .container
-    %h1 Proteus
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-jekyll">Let's get started</a>
-      building your prototype.
+
+-#<!--<div class="wrapper-for-content-outside-of-footer">Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer</div>-->
+
+%footer.footer-2{:role => "contentinfo"}
+  .footer-logo
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+    %ul
+      %li
+        <a href="javascript:void(0)">About</a>
+      %li
+        <a href="javascript:void(0)">Contact</a>
+      %li
+        <a href="javascript:void(0)">Products</a>
+
+    .footer-secondary-links
+      %ul
+        %li
+          <a href="javascript:void(0)">Terms and Conditions</a>
+        %li
+          <a href="javascript:void(0)">Privacy Policy</a>
+
+      %ul.footer-social
+        %li
+          <a href="javascript:void(0)"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook"></a>
+        %li
+          <a href="javascript:void(0)"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter"></a>
+        %li
+          <a href="javascript:void(0)"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube"></a>
+
