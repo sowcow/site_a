@@ -12,7 +12,7 @@ title: ИнтерФюрра
 description: 'TODO: change - Prototyping starter kit for Jekyll'
 
 # Name of project on Github
-#baseurl: /a-site
+baseurl: /site_a
 
 # Build settings
 markdown: kramdown
