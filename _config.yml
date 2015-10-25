@@ -12,7 +12,7 @@ title: Proteus
 description: Prototyping starter kit for Jekyll
 
 # Name of project on Github
-baseurl: /proteus-jekyll
+#baseurl: /a-site
 
 # Build settings
 markdown: kramdown
